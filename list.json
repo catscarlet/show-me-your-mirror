@@ -1,0 +1,48 @@
+{
+    "ubuntu": {
+        "16.04": {
+            "name":"xenial",
+            "mirrors": {
+                "1604_mirrors": {
+                    "name" :"mirrors",
+                    "url": "1604_mirrors.txt",
+                    "uri": "https://server2.catscarlet.com/demo/show-me-your-mirror/mirrors/ubuntu/1604_mirrors.txt"
+                },
+                "1604_tsinghua": {
+                    "name" :"tsinghua",
+                    "url": "1604_tsinghua.txt",
+                    "refer": "https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/",
+                    "uri": "https://server2.catscarlet.com/demo/show-me-your-mirror/mirrors/ubuntu/1604_tsinghua.txt"
+                }
+            }
+        },
+        "18.04": {
+            "name":"bionic",
+            "mirrors": {
+                "1604_mirrors": {
+                    "name" :"mirrors",
+                    "url": "1804_mirrors.txt",
+                    "uri": "https://server2.catscarlet.com/demo/show-me-your-mirror/mirrors/ubuntu/1804_mirrors.txt"
+                },
+                "1604_tsinghua": {
+                    "name" :"tsinghua",
+                    "url": "1804_tsinghua.txt",
+                    "refer": "https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/",
+                    "uri": "https://server2.catscarlet.com/demo/show-me-your-mirror/mirrors/ubuntu/1804_tsinghua.txt"
+                }
+            }
+        }
+    },
+    "centos": {
+        "7":{
+            "mirrors": {
+                "7_tsinghua": {
+                    "name" :"tsinghua",
+                    "url": "7_tsinghua.txt",
+                    "refer": "https://mirrors.tuna.tsinghua.edu.cn/help/centos/",
+                    "uri": "https://server2.catscarlet.com/demo/show-me-your-mirror/mirrors/centos/7_tsinghua.txt"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.selector {
+    width: 15em;
+}
+
+.description {
+    width: 7em;
+    display: inline-block;
+    margin: 0.1em;
+}
+
+.text {
+    min-width: 55em;
+    min-height: 12em;
+}

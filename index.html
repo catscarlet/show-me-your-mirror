@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Show me your mirror</title>
+    <script src="lib/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="index.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="head">
+        <p>Mirror mirror on the wall, who is the fairest one of all!</p>
+        <p>At least it's not the default one!</p>
+        <hr>
+        <p>This is a page that helps you to get an avaliable linux mirror when having trouble in copy&paste or editing, such as installing in virtual machine, or a real machine.</p>
+        <p>Select your distribution and releasever, and choose a source you like, then </p>
+        <p>  - Copy the content and Paste it into the source.list file.</p>
+        <p>  - Or, you can copy the raw link and use wget to down the source file.</p>
+    </div>
+    <hr>
+
+    <div class="select">
+        <p>Select distribution</p>
+        <select id="distribution" class="selector" name="distribution">
+            <option value="">--Please choose an option--</option>
+        </select>
+
+        <select id="releasever" class="selector" name="releasever">
+            <option value="">--Please choose an option--</option>
+        </select>
+
+        <select id="source" class="selector" name="source">
+            <option value="">--Please choose an option--</option>
+        </select>
+
+        <span><a href="list.json" target="_blank" rel="noreferrer">ZA JSON!</a></span>
+    </div>
+
+    <hr>
+
+    <div class="content">
+        <p class="description">information: </p><span id="information"></span>
+        <br>
+        <p class="description">refer: </p><span id="refer"></span>
+        <br>
+        <p class="description">raw: </p><span id="raw"></span>
+        <br>
+        <textarea id="text" class="text" name="text" rows="8" cols="80"></textarea>
+    </div>
+    <footer><a href="https://github.com/catscarlet/show-me-your-mirror">GitHub: https://github.com/catscarlet/show-me-your-mirror</a> (Send Push Request if you wish to add more source.)</footer>
+</body>
+
+</html>
