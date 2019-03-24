@@ -44,5 +44,29 @@
                 }
             }
         }
+    },
+    "linux-mint": {
+        "19": {
+            "name":"tara",
+            "mirrors": {
+                "19_ustc": {
+                    "name" :"ustc",
+                    "url": "19_ustc.txt",
+                    "refer": "https://mirrors.ustc.edu.cn/help/linuxmint.html",
+                    "uri": "https://server2.catscarlet.com/demo/show-me-your-mirror/mirrors/linux-mint/19_ustc.txt"
+                }
+            }
+        },
+        "19.1": {
+            "name":"tessa",
+            "mirrors": {
+                "19.1_ustc": {
+                    "name" :"ustc",
+                    "url": "19.1_ustc.txt",
+                    "refer": "https://mirrors.ustc.edu.cn/help/linuxmint.html",
+                    "uri": "https://server2.catscarlet.com/demo/show-me-your-mirror/mirrors/linux-mint/19.1_ustc.txt"
+                }
+            }
+        }
     }
 }
