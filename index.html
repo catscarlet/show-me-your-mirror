@@ -25,8 +25,12 @@
     </div>
     <hr>
 
-    <div class="select">
-        <p>Select distribution</p>
+    <div id="loading" class="loading">
+        <p>Loading distribution and mirror list.</p>
+    </div>
+
+    <div id="select" class="select" style="display: none">
+        <p>Select distribution and mirror.</p>
         <select id="distribution" class="selector" name="distribution">
             <option value="">--Please choose an option--</option>
         </select>
@@ -45,7 +49,7 @@
     <hr>
 
     <div class="content">
-        <p class="description">information: </p><span id="information"></span>
+        <p class="description">information: </p><span id="information"><i>Please select distribution and mirror.</i></span>
         <br>
         <p class="description">refer: </p><span id="refer"></span>
         <br>

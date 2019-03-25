@@ -22,11 +22,14 @@ function init() {
         dataType: 'json',
         async: true,
         success: function(result, textStatus, jqXHR) {
+            $('#loading').hide();
+            $('#select').show();
             list = result;
             drawDistribution();
         },
         error: function(msg) {
-            console.log(msg);
+            let statusText = '<span  style="color: red">' + msg.statusText + '</snap>';
+            $('#loading').append(statusText);
         },
     });
 };
@@ -158,6 +161,9 @@ function showDown() {
     let raw = A_TPL;
     raw = raw.split('{$value}').join(uri);
     $('#raw').html(raw);
+
+    let tips = 'Loading...';
+    $('#text').html(tips);
 
     $.ajax({
         type: 'GET',
