@@ -166,7 +166,8 @@ function showDown() {
             Prism.highlightAll();
         },
         error: function(msg) {
-            $('#code').html(msg.statusText);
+            let statusText = '<span  style="color: red">' + msg.statusText + '</snap>';
+            $('#text').html(statusText);
         },
     });
 
