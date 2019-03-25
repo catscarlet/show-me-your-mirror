@@ -6,7 +6,7 @@
 
 ---
 
-This is a page that helps you to get an avaliable linux mirror when having trouble in copy&paste or editing, such as installing in virtual machine, or a real machine.
+This is a page that helps you to get an avaliable linux mirror when having trouble in copy&paste or editing, such as installing in virtual machine, or a real machine， although this is still helpful if you you don't have trouble.
 
 Select your distribution and releasever, and choose a source you like, then
 
