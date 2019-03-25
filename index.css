@@ -1,5 +1,6 @@
 .selector {
     width: 15em;
+    font-size: large;
 }
 
 .description {
@@ -10,5 +11,6 @@
 
 .text {
     min-width: 55em;
-    min-height: 12em;
+    min-height: 20em;
+    border: 1px solid black;
 }

@@ -1,6 +1,12 @@
 $(function() {
     console.log('loaded');
     init();
+
+    $('#text').click(function() {
+        console.log('clicked');
+        console.log(this);
+        window.getSelection().selectAllChildren(this);
+    });
 });
 
 const OPTION_TPL = '<option value="{$value}">{$name}</option>';
@@ -159,10 +165,12 @@ function showDown() {
         dataType: 'text',
         async: true,
         success: function(result, textStatus, jqXHR) {
-            $('#text').html(result);
+            let code = '<code id="code" class="lang-apacheconf">' + result + '</code>';
+            $('#text').html(code);
+            Prism.highlightAll();
         },
         error: function(msg) {
-            console.log(msg);
+            $('#code').html(msg.statusText);
         },
     });
 

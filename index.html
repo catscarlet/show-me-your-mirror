@@ -6,7 +6,10 @@
     <title>Show me your mirror</title>
     <script src="lib/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="index.js" charset="utf-8"></script>
+    <script src="lib/prism.js"></script>
     <link rel="stylesheet" href="index.css">
+    <link href="lib/prism.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -48,7 +51,8 @@
         <br>
         <p class="description">raw: </p><span id="raw"></span>
         <br>
-        <textarea id="text" class="text" name="text" rows="8" cols="80"></textarea>
+        <pre id="text" class="text"></pre>
+        <!--<textarea id="text" class="text lang-apacheconf" name="text" rows="8" cols="80"></textarea>-->
     </div>
     <footer><a href="https://github.com/catscarlet/show-me-your-mirror">GitHub: https://github.com/catscarlet/show-me-your-mirror</a> (Send Push Request if you wish to add more source.)</footer>
 </body>
