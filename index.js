@@ -1,10 +1,7 @@
 $(function() {
-    console.log('loaded');
     init();
 
     $('#text').click(function() {
-        console.log('clicked');
-        console.log(this);
         window.getSelection().selectAllChildren(this);
     });
 });
@@ -14,7 +11,6 @@ const A_TPL = '<a href="{$value}" target="_blank" rel="noreferrer">{$value}</a>'
 let list;
 
 function init() {
-    //let url = 'https://server2.catscarlet.com/demo/show-me-your-mirror/list.json';
     let url = 'list.json';
     $.ajax({
         type: 'GET',
@@ -108,7 +104,6 @@ function drawSource(clean = false) {
     }
 
     for (let source in list[distribution][releasever].mirrors) {
-        console.log(source);
         let value = source;
         let name = list[distribution][releasever].mirrors[source].name;
 
@@ -127,18 +122,14 @@ function drawSource(clean = false) {
 
 function showDown() {
     let distribution = $('#distribution').val();
-    //console.log(distribution);
     let releasever = $('#releasever').val();
-    //console.log(releasever);
     let source = $('#source').val();
-    //console.log(source);
 
     if (!releasever || !distribution || !source) {
         return;
     }
 
     let obj = list[distribution][releasever].mirrors[source];
-    console.log(obj);
 
     let information = distribution + '-' + releasever + '-' + source;
     $('#information').html(information);
@@ -155,7 +146,6 @@ function showDown() {
     $('#refer').html(refer);
 
     let url = './mirrors/' + distribution + '/' + obj.url;
-    console.log('url: ' + url);
 
     let uri = obj.uri;
     let raw = A_TPL;
